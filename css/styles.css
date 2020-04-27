@@ -1,0 +1,248 @@
+body {
+  height: 100vh;
+  margin: 0px;
+}
+
+.panel {
+  height: 100%;
+  width: 100%;
+}
+.panel.fill img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.panel.gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.panel.gradient p,
+.panel.gradient i {
+  color: white;
+}
+.panel.gradient .word {
+  font-family: Sabon Roman;
+  font-size: 5em;
+  margin-bottom: 0;
+}
+.panel.gradient .def {
+  font-family: Circular Medium;
+  font-size: 2em;
+  max-width: 50%;
+}
+.panel.pink-gradient {
+  background-image: url('../assets/svg/gradientes/gradiente\ rosa.svg');
+}
+.panel.orange-gradient {
+  background-image: url('../assets/svg/gradientes/gradiente\ naranja\ azul.svg');
+}
+.panel.purple-gradient {
+  background-image: url('../assets/svg/gradientes/gradiente\ morado\ rojo.svg');
+}
+
+.panel.yellow {
+  background-color: #fefe49;
+}
+.panel.black {
+  color: white;
+  background-color: black;
+}
+.panel.blue {
+  background-color: #0000e2;
+}
+.panel.turqoise {
+  background-color: turquoise;
+}
+.panel.green {
+  background-color: green;
+}
+.panel.bordeaux {
+  background-color: burlywood;
+}
+.panel.orangeyellow {
+  background-color: #ffcd3f;
+}
+.panel.red {
+  background-color: #fb4747;
+}
+.panel.pink {
+  background-color: #f579db;
+}
+
+/* TITLE SCREEN */
+.title-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  flex-grow: 1;
+  min-height: 100%;
+}
+.title-container .walls {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+}
+.title-container .walls svg {
+  width: 100%;
+  height: 100%;
+}
+.title-container .walls p {
+  text-align: center;
+}
+.title-container .walls #top,
+.title-container .walls #left,
+.title-container .walls #right,
+.title-container .walls #bottom {
+  position: absolute;
+}
+.title-container .walls #right,
+.title-container .walls #left {
+  top: 50%;
+  bottom: 50%;
+  writing-mode: vertical-lr;
+}
+.title-container .walls #top {
+  top: 0;
+}
+.title-container .walls #left {
+  left: 0;
+}
+.title-container .walls #right {
+  right: 0;
+}
+.title-container .walls #bottom {
+  bottom: 0;
+}
+
+.title-container .title {
+  display: flex;
+  text-align: center;
+  max-width: 35%;
+}
+.title-container .title,
+.title-container .walls {
+  grid-column: 1;
+  grid-row: 1;
+}
+.title-container .title b {
+  font-family: Ohno Blazeface;
+  font-size: 7em;
+  color: #ff2812;
+  line-height: 1em;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  height: 100%;
+}
+
+.gallery.coarse {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    'a a b c'
+    'd d b c'
+    'e f b c';
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.gallery.coarse img.a {
+  grid-area: a;
+}
+.gallery.coarse img.b {
+  grid-area: b;
+}
+.gallery.coarse img.c {
+  grid-area: c;
+}
+.gallery.coarse img.d {
+  grid-area: d;
+}
+.gallery.coarse img.e {
+  grid-area: e;
+}
+.gallery.coarse img.f {
+  grid-area: f;
+}
+
+.gallery.fine {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  width: 100%;
+}
+
+.gallery.preserve-aspect-ratio img {
+  width: auto;
+  height: auto;
+}
+.gallery .window.small {
+  display: flex;
+  padding-right: 25%;
+}
+.gallery .window.top {
+  padding-top: 20%;
+}
+.gallery .window.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel .one-one {
+  grid-template-columns: 1fr 1fr;
+}
+.panel .five-three {
+  grid-template-columns: 5fr 3fr;
+}
+.panel .three-five {
+  grid-template-columns: 3fr 5fr;
+}
+.poem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.poem.top {
+  padding-top: 20%;
+  display: inline;
+  color: white;
+}
+.poem > .title {
+  font-family: Ohno Blazeface;
+  font-size: 2.6em;
+  line-height: 2.4rem;
+  margin: 0 25%;
+}
+.poem > .author {
+  font-family: Circular Medium;
+  font-size: 1.6em;
+  margin: 0 25%;
+}
+.poem > .quote {
+  font-family: Circular Medium;
+  font-size: 1em;
+  margin: 10% 25% 0 25%;
+}
+
+.credits {
+  font-family: Circular Medium;
+  font-size: 2em;
+}

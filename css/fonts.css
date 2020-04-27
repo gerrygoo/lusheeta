@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Circular Black';
+  src: url('../assets/fonts/Circular/CircularStd-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Circular Black';
+  src: url('../assets/fonts/Circular/CircularStd-BlackItalic.woff.woff')
+    format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Circular Bold';
+  src: url('../assets/fonts/Circular/CircularStd-Bold.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Circular Bold';
+  src: url('../assets/fonts/Circular/CircularStd-BoldItalic.woff')
+    format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Circular Book';
+  src: url('../assets/fonts/Circular/CircularStd-Book.woff') format('woff');
+}
+@font-face {
+  font-family: 'Circular Book';
+  src: url('../assets/fonts/Circular/CircularStd-BookItalic.woff')
+    format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Circular Medium';
+  src: url('../assets/fonts/Circular/CircularStd-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Circular Medium';
+  src: url('../assets/fonts/Circular/CircularStd-MediumItalic.woff')
+    format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ohno Blazeface';
+  src: url('../assets/fonts/Ohno-Blazeface/Ohno\ Blazeface\ 16\ Point\ Italic.woff')
+    format('woff');
+}
+
+@font-face {
+  font-family: 'Sabon Roman';
+  src: url('../assets/fonts/Sabon_Roman_Oldstyle_Figures\ 2\ 2.woff')
+    format('woff');
+}
+
+.ohno {
+  font-family: Ohno Blazeface;
+}
